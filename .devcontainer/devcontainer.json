@@ -3,6 +3,9 @@
   "image": "bitsrc/stable:latest",
   "forwardPorts": [],
   "remoteUser": "bituser",
+  "remoteEnv": {
+    "BIT_CONFIG_USER_TOKEN": "${localEnv:BIT_CONFIG_USER_TOKEN}"
+  },
   "customizations": {
     "vscode": {
       "extensions": [

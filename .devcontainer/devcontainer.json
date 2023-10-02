@@ -9,7 +9,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "bit.vscode-bit@prerelease"
+        "bit.vscode-bit@latest"
       ]
     }
   }

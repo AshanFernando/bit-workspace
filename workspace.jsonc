@@ -95,5 +95,10 @@
   },
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true
-  }
+  },
+  "teambit.commmunity/examples/acme-web": {},
+  "teambit.commmunity/examples/discussion-server": {},
+  "teambit.commmunity/examples/gateway-server": {},
+  "teambit.commmunity/examples/platform": {},
+  "teambit.commmunity/examples/user-server": {}
 }

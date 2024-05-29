@@ -14,6 +14,11 @@ export async function workspaceConfig({ name, defaultScope }: WorkspaceContext) 
   configParsed['teambit.workspace/variants'] = {
     '*': {},
   };
-
+  configParsed[`${defaultScope}/examples/acme-web`] = {};
+  configParsed[`${defaultScope}/examples/discussion-server`] = {};
+  configParsed[`${defaultScope}/examples/gateway-server`] = {};
+  configParsed[`${defaultScope}/examples/platform`] = {};
+  configParsed[`${defaultScope}/examples/user-server`] = {};
+  
   return stringifyWorkspaceConfig(configParsed);
 }

@@ -1,0 +1,3 @@
+import * as t from '@babel/types';
+export declare function isClassComponent(classDec: t.ClassDeclaration): boolean;
+export declare function isFunctionComponent(block: t.BlockStatement): boolean;

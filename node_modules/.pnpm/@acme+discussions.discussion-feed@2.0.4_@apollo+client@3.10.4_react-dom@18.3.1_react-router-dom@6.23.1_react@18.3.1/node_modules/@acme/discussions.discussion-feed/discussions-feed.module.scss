@@ -1,0 +1,19 @@
+
+.feed {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.discussion {
+  display: flex;
+  padding: 8px;
+  max-width: 500px;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.title {
+  color: var(--primary-color);
+}

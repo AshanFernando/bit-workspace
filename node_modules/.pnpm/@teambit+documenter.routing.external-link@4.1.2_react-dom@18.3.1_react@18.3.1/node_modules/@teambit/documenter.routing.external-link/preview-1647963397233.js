@@ -1,0 +1,1 @@
+export const compositions = [require('/Users/yoshuakuttler/Library/Caches/Bit/capsules/ba712acadaad37b4be01cac6ced160edbc352fee/teambit.documenter_routing_external-link@4.1.2/dist/external-link.compositions.js')]

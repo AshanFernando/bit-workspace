@@ -1,0 +1,58 @@
+{
+  "name": "@teambit/documenter.markdown.heading",
+  "version": "0.1.8",
+  "homepage": "https://bit.dev/teambit/documenter/markdown/heading",
+  "main": "dist/index.js",
+  "componentId": {
+    "scope": "teambit.documenter",
+    "name": "markdown/heading",
+    "version": "0.1.8"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "core-js": "^3.0.0",
+    "@teambit/documenter.ui.linked-heading": "4.1.8"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.8",
+    "@testing-library/react": "12.0.0",
+    "@types/testing-library__jest-dom": "5.9.5",
+    "@babel/runtime": "7.12.18",
+    "@types/jest": "^26.0.0",
+    "@types/react-dom": "^17.0.5",
+    "@types/node": "12.20.4",
+    "@teambit/documenter.envs.documenter-react": "0.0.2"
+  },
+  "peerDependencies": {
+    "react-dom": "^16.8.0 || ^17.0.0",
+    "react": "^16.8.0 || ^17.0.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "bindingPrefix": "@teambit",
+    "env": {},
+    "overrides": {
+      "dependencies": {
+        "core-js": "^3.0.0",
+        "react-dom": "-",
+        "react": "-"
+      },
+      "devDependencies": {
+        "@types/testing-library__jest-dom": "5.9.5",
+        "@babel/runtime": "7.12.18",
+        "@types/jest": "^26.0.0",
+        "@types/react-dom": "^17.0.5",
+        "@types/react": "^17.0.8",
+        "@types/node": "12.20.4",
+        "@types/mocha": "-",
+        "react-dom": "-",
+        "react": "-"
+      },
+      "peerDependencies": {
+        "react-dom": "^16.8.0 || ^17.0.0",
+        "react": "^16.8.0 || ^17.0.0"
+      }
+    }
+  },
+  "private": false
+}

@@ -1,0 +1,48 @@
+{
+  "name": "@teambit/documenter.ui.table-row",
+  "version": "4.1.13",
+  "homepage": "https://bit.cloud/teambit/documenter/ui/table-row",
+  "main": "dist/index.js",
+  "componentId": {
+    "scope": "teambit.documenter",
+    "name": "ui/table-row",
+    "version": "4.1.13"
+  },
+  "dependencies": {
+    "classnames": "2.2.6",
+    "react-syntax-highlighter": "15.4.3",
+    "@teambit/base-ui.layout.grid-component": "1.0.2",
+    "@teambit/documenter.ui.table-column": "4.0.4"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/classnames": "2.2.11",
+    "@types/react-syntax-highlighter": "13.5.0",
+    "@types/mocha": "9.1.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/jest": "^29.2.2",
+    "@teambit/documenter.envs.documenter-react-env": "0.0.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0"
+  },
+  "license": "Apache-2.0",
+  "private": false,
+  "engines": {
+    "node": ">=12.22.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teambit/bit"
+  },
+  "keywords": [
+    "bit",
+    "components",
+    "collaboration",
+    "web",
+    "react",
+    "react-components",
+    "angular",
+    "angular-components"
+  ]
+}

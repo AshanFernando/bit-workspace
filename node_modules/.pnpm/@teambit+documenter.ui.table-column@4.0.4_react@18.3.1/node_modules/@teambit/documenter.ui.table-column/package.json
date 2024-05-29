@@ -1,0 +1,25 @@
+{
+  "name": "@teambit/documenter.ui.table-column",
+  "version": "4.0.4",
+  "homepage": "https://bit.cloud/teambit/documenter/ui/table-column",
+  "main": "dist/index.js",
+  "componentId": {
+    "scope": "teambit.documenter",
+    "name": "ui/table-column",
+    "version": "4.0.4"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/jest": "^29.2.2",
+    "@teambit/documenter.envs.documenter-react-env": "0.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "private": false
+}

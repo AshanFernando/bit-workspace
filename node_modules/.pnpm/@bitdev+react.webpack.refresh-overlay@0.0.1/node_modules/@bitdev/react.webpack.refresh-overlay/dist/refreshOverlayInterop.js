@@ -1,0 +1,18 @@
+/* eslint-disable */
+/** this file was copied as is from react-dev-utils/refreshOverlayInterop */
+// @remove-on-eject-begin
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+// @remove-on-eject-end
+'use strict';
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_error_overlay_1 = require("react-error-overlay");
+exports.default = {
+    clearRuntimeErrors: react_error_overlay_1.dismissRuntimeErrors,
+    handleRuntimeError: react_error_overlay_1.reportRuntimeError,
+};
+//# sourceMappingURL=refreshOverlayInterop.js.map

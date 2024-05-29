@@ -1,0 +1,48 @@
+{
+  "name": "@teambit/documenter.markdown.mdx",
+  "version": "0.1.13",
+  "homepage": "https://bit.cloud/teambit/documenter/markdown/mdx",
+  "main": "dist/index.js",
+  "componentId": {
+    "scope": "teambit.documenter",
+    "name": "markdown/mdx",
+    "version": "0.1.13"
+  },
+  "dependencies": {
+    "@mdx-js/react": "1.6.22",
+    "classnames": "2.2.6",
+    "core-js": "^3.0.0",
+    "@teambit/documenter.markdown.heading": "0.1.8",
+    "@teambit/documenter.routing.external-link": "4.1.2",
+    "@teambit/documenter.ui.block-quote": "4.0.7",
+    "@teambit/documenter.ui.bold": "4.0.7",
+    "@teambit/documenter.ui.image": "4.0.2",
+    "@teambit/documenter.ui.inline-code": "0.1.5",
+    "@teambit/documenter.ui.italic": "4.0.7",
+    "@teambit/documenter.ui.ol": "4.1.5",
+    "@teambit/documenter.ui.paragraph": "4.1.5",
+    "@teambit/documenter.ui.separator": "4.1.5",
+    "@teambit/documenter.ui.sup": "4.0.7",
+    "@teambit/documenter.ui.table.base-table": "4.1.5",
+    "@teambit/documenter.ui.table.td": "4.1.5",
+    "@teambit/documenter.ui.table.tr": "4.1.5",
+    "@teambit/documenter.ui.ul": "4.1.5",
+    "@teambit/documenter.markdown.hybrid-live-code-snippet": "0.1.12"
+  },
+  "devDependencies": {
+    "@types/mdx-js__react": "1.5.3",
+    "@types/react": "^17.0.8",
+    "@types/node": "12.20.4",
+    "@types/react-dom": "^17.0.5",
+    "@types/jest": "^26.0.0",
+    "@babel/runtime": "7.20.0",
+    "@types/testing-library__jest-dom": "5.9.5",
+    "@teambit/documenter.envs.documenter-react": "0.0.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "private": false
+}

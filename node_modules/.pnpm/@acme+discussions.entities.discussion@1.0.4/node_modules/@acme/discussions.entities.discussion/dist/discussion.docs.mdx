@@ -1,0 +1,32 @@
+---
+labels: ['discussion', 'entity']
+description: 'A Discussion entity.'
+---
+
+A component for a Discussion entity, supports serialization and de-serialization of Discussion objects and can be used from
+both backend and frontend.
+
+## Get started
+
+Install and use the component in your code:
+
+```ts
+import { Discussion } from '@acme/acme.discussions.discussion';
+
+const discussion = Discussion.from({
+  title: 'Hello everyone!',
+  username: 'samdoe'
+});
+```
+
+## Mock data
+
+You can use announcement mock data for development and testing purposes using the `mockDiscussions` API.
+
+```ts
+import { mockDiscussions } from '@acme/acme.discussions.discussion';
+import from '@acme/corporate.entities.announcement';
+
+const discussions = mockDiscussions();
+console.log(discussions);
+```

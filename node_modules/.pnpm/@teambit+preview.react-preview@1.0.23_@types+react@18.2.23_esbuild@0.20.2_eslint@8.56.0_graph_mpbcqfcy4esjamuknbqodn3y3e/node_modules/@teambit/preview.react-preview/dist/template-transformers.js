@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createTemplateBundlerTransformers = void 0;
+const react_webpack_react_webpack_1 = require("@teambit/react.webpack.react-webpack");
+function createTemplateBundlerTransformers(context) {
+    const base = (0, react_webpack_react_webpack_1.configBaseFactory)(!context.development);
+    const baseProd = (0, react_webpack_react_webpack_1.configBaseProdFactory)(context.development);
+    const templateConfig = (0, react_webpack_react_webpack_1.templateWebpackConfigFactory)();
+    const defaultTransformer = (configMutator) => {
+        const merged = configMutator.merge([base, baseProd, templateConfig]);
+        return merged;
+    };
+    return defaultTransformer;
+}
+exports.createTemplateBundlerTransformers = createTemplateBundlerTransformers;
+//# sourceMappingURL=template-transformers.js.map

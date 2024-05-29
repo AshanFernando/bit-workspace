@@ -1,0 +1,10 @@
+import { HTMLAttributes } from 'react';
+import type { LinkedHeadingProps, Sizes, Element } from '@teambit/documenter.ui.linked-heading';
+export declare type HeadingProps = HTMLAttributes<HTMLHeadingElement> & LinkedHeadingProps;
+export declare function createHeading(size: Sizes, element?: Element): ({ children, className, ...rest }: HeadingProps) => JSX.Element;
+export declare const h1: ({ children, className, ...rest }: HeadingProps) => JSX.Element;
+export declare const h2: ({ children, className, ...rest }: HeadingProps) => JSX.Element;
+export declare const h3: ({ children, className, ...rest }: HeadingProps) => JSX.Element;
+export declare const h4: ({ children, className, ...rest }: HeadingProps) => JSX.Element;
+export declare const h5: ({ children, className, ...rest }: HeadingProps) => JSX.Element;
+export declare const h6: ({ children, className, ...rest }: HeadingProps) => JSX.Element;

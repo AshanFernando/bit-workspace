@@ -1,0 +1,22 @@
+declare type ColumnPreset = {
+    1: string;
+    2: string;
+    3: string;
+    4: string;
+    5: string;
+    6: string;
+    7: string;
+    8: string;
+    9: string;
+    10: string;
+    11: string;
+    12: string;
+};
+export declare const colGrid: ColumnPreset;
+export declare const colGridXs: ColumnPreset;
+export declare const colGridSm: ColumnPreset;
+export declare const colGridMd: ColumnPreset;
+export declare const colGridL: ColumnPreset;
+export declare const colGridLg: ColumnPreset;
+export declare const colGridXl: ColumnPreset;
+export {};

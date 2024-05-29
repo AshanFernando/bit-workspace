@@ -1,0 +1,2548 @@
+{
+  "__schema": "APISchema",
+  "location": {
+    "filePath": "index.ts",
+    "line": 1,
+    "character": 1
+  },
+  "module": {
+    "__schema": "ModuleSchema",
+    "location": {
+      "filePath": "index.ts",
+      "line": 1,
+      "character": 1
+    },
+    "exports": [
+      {
+        "__schema": "VariableLikeSchema",
+        "location": {
+          "filePath": "link.tsx",
+          "line": 9,
+          "character": 14
+        },
+        "signature": "const Link: React.FunctionComponent<LinkProps>",
+        "name": "Link",
+        "type": {
+          "__schema": "TypeRefSchema",
+          "location": {
+            "filePath": "link.tsx",
+            "line": 9,
+            "character": 20
+          },
+          "name": "React.FunctionComponent",
+          "typeArgs": [
+            {
+              "__schema": "TypeRefSchema",
+              "location": {
+                "filePath": "link.tsx",
+                "line": 9,
+                "character": 44
+              },
+              "name": "LinkProps"
+            }
+          ]
+        },
+        "isOptional": false,
+        "defaultValue": "forwardRef<HTMLAnchorElement, LinkPropsWithHTMLAttributes>(function Link(props, ref) {\n  const nav = useNavigation();\n  const ActualLink = nav.Link || NativeLink;\n\n  if (props.native || props.external) {\n    return <NativeLink {...props} ref={ref} />;\n  }\n\n  return <ActualLink {...props} ref={ref} />;\n})"
+      },
+      {
+        "__schema": "InterfaceSchema",
+        "location": {
+          "filePath": "link.type.ts",
+          "line": 42,
+          "character": 1
+        },
+        "signature": "interface LinkProps",
+        "name": "LinkProps",
+        "members": [],
+        "extendsNodes": [
+          {
+            "__schema": "ExpressionWithTypeArgumentsSchema",
+            "location": {
+              "filePath": "link.type.ts",
+              "line": 43,
+              "character": 11
+            },
+            "name": "extends BaseLinkProps,\n    RefAttributes<HTMLAnchorElement>,\n    AnchorHTMLAttributes<HTMLAnchorElement>",
+            "typeArgs": [],
+            "expression": {
+              "__schema": "InterfaceSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 12,
+                "character": 1
+              },
+              "name": "BaseLinkProps",
+              "signature": "interface BaseLinkProps",
+              "extendsNodes": [],
+              "members": [
+                {
+                  "__schema": "VariableLikeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 16,
+                    "character": 3
+                  },
+                  "name": "state",
+                  "signature": "(property) BaseLinkProps.state?: Record<string, any>",
+                  "isOptional": true,
+                  "type": {
+                    "__schema": "TypeRefSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 16,
+                      "character": 11
+                    },
+                    "name": "Record",
+                    "typeArgs": [
+                      {
+                        "__schema": "KeywordTypeSchema",
+                        "location": {
+                          "filePath": "link.type.ts",
+                          "line": 16,
+                          "character": 18
+                        },
+                        "name": "string"
+                      },
+                      {
+                        "__schema": "KeywordTypeSchema",
+                        "location": {
+                          "filePath": "link.type.ts",
+                          "line": 16,
+                          "character": 26
+                        },
+                        "name": "any"
+                      }
+                    ]
+                  },
+                  "doc": {
+                    "__schema": "DocSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 13,
+                      "character": 3
+                    },
+                    "raw": "/**\n   * key-value state for stateful routing systems. (Has to be supported by the speicifc link implementation)\n   */",
+                    "comment": "key-value state for stateful routing systems. (Has to be supported by the speicifc link implementation)"
+                  }
+                },
+                {
+                  "__schema": "VariableLikeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 21,
+                    "character": 3
+                  },
+                  "name": "native",
+                  "signature": "(property) BaseLinkProps.native?: boolean",
+                  "isOptional": true,
+                  "type": {
+                    "__schema": "KeywordTypeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 21,
+                      "character": 12
+                    },
+                    "name": "boolean"
+                  },
+                  "doc": {
+                    "__schema": "DocSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 18,
+                      "character": 3
+                    },
+                    "raw": "/**\n   * force the use of a native `a` element and ignore the contextual implemented Link.\n   */",
+                    "comment": "force the use of a native `a` element and ignore the contextual implemented Link."
+                  }
+                },
+                {
+                  "__schema": "VariableLikeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 24,
+                    "character": 3
+                  },
+                  "name": "external",
+                  "signature": "(property) BaseLinkProps.external?: boolean",
+                  "isOptional": true,
+                  "type": {
+                    "__schema": "KeywordTypeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 24,
+                      "character": 14
+                    },
+                    "name": "boolean"
+                  },
+                  "doc": {
+                    "__schema": "DocSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 23,
+                      "character": 3
+                    },
+                    "raw": "/** open the link in a new page (renders as native link) */",
+                    "comment": "open the link in a new page (renders as native link)"
+                  }
+                },
+                {
+                  "__schema": "VariableLikeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 27,
+                    "character": 3
+                  },
+                  "name": "activeClassName",
+                  "signature": "(property) BaseLinkProps.activeClassName?: string",
+                  "isOptional": true,
+                  "type": {
+                    "__schema": "KeywordTypeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 27,
+                      "character": 21
+                    },
+                    "name": "string"
+                  },
+                  "doc": {
+                    "__schema": "DocSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 26,
+                      "character": 3
+                    },
+                    "raw": "/** class to apply when `href` matches the current location */",
+                    "comment": "class to apply when `href` matches the current location"
+                  }
+                },
+                {
+                  "__schema": "VariableLikeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 29,
+                    "character": 3
+                  },
+                  "name": "activeStyle",
+                  "signature": "(property) BaseLinkProps.activeStyle?: React.CSSProperties",
+                  "isOptional": true,
+                  "type": {
+                    "__schema": "TypeRefSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 29,
+                      "character": 17
+                    },
+                    "name": "React.CSSProperties"
+                  },
+                  "doc": {
+                    "__schema": "DocSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 28,
+                      "character": 3
+                    },
+                    "raw": "/** styles to apply when `href` matches the current location */",
+                    "comment": "styles to apply when `href` matches the current location"
+                  }
+                },
+                {
+                  "__schema": "VariableLikeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 34,
+                    "character": 3
+                  },
+                  "name": "active",
+                  "signature": "(property) BaseLinkProps.active?: boolean",
+                  "isOptional": true,
+                  "type": {
+                    "__schema": "KeywordTypeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 34,
+                      "character": 12
+                    },
+                    "name": "boolean"
+                  },
+                  "doc": {
+                    "__schema": "DocSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 30,
+                      "character": 3
+                    },
+                    "raw": "/**\n   * explicitly apply active styles.\n   * If left undefined, the link will automatically become \"active\" if href matches the current url.\n   */",
+                    "comment": "explicitly apply active styles.\nIf left undefined, the link will automatically become \"active\" if href matches the current url."
+                  }
+                },
+                {
+                  "__schema": "VariableLikeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 36,
+                    "character": 3
+                  },
+                  "name": "exact",
+                  "signature": "(property) BaseLinkProps.exact?: boolean",
+                  "isOptional": true,
+                  "type": {
+                    "__schema": "KeywordTypeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 36,
+                      "character": 11
+                    },
+                    "name": "boolean"
+                  },
+                  "doc": {
+                    "__schema": "DocSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 35,
+                      "character": 3
+                    },
+                    "raw": "/** href should match url exactly to set as active, when using active=\"auto\" */",
+                    "comment": "href should match url exactly to set as active, when using active=\"auto\""
+                  }
+                },
+                {
+                  "__schema": "VariableLikeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 38,
+                    "character": 3
+                  },
+                  "name": "strict",
+                  "signature": "(property) BaseLinkProps.strict?: boolean",
+                  "isOptional": true,
+                  "type": {
+                    "__schema": "KeywordTypeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 38,
+                      "character": 12
+                    },
+                    "name": "boolean"
+                  },
+                  "doc": {
+                    "__schema": "DocSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 37,
+                      "character": 3
+                    },
+                    "raw": "/** include trailing slash on the location pathname, when using active=\"auto\"  */",
+                    "comment": "include trailing slash on the location pathname, when using active=\"auto\""
+                  }
+                },
+                {
+                  "__schema": "VariableLikeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 39,
+                    "character": 3
+                  },
+                  "name": "nonce",
+                  "signature": "(property) BaseLinkProps.nonce?: string",
+                  "isOptional": true,
+                  "type": {
+                    "__schema": "KeywordTypeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 39,
+                      "character": 11
+                    },
+                    "name": "string"
+                  }
+                }
+              ],
+              "doc": {
+                "__schema": "DocSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 8,
+                  "character": 1
+                },
+                "raw": "/**\n * A standard API schema for a Link component.\n */",
+                "comment": "A standard API schema for a Link component."
+              }
+            }
+          },
+          {
+            "__schema": "ExpressionWithTypeArgumentsSchema",
+            "location": {
+              "filePath": "link.type.ts",
+              "line": 44,
+              "character": 5
+            },
+            "name": "extends BaseLinkProps,\n    RefAttributes<HTMLAnchorElement>,\n    AnchorHTMLAttributes<HTMLAnchorElement>",
+            "typeArgs": [
+              {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 44,
+                  "character": 19
+                },
+                "name": "HTMLAnchorElement"
+              }
+            ],
+            "expression": {
+              "__schema": "TypeRefSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 44,
+                "character": 5
+              },
+              "name": "RefAttributes<T>",
+              "packageName": "/tmp/capsules-root/sign-capsules/2023-11-28/13d9ft9/teambit.base-react_navigation_link@c7ed551216d42f4bbb8e8efaaff08c1c7ffa29a5/link.type.ts"
+            }
+          },
+          {
+            "__schema": "ExpressionWithTypeArgumentsSchema",
+            "location": {
+              "filePath": "link.type.ts",
+              "line": 45,
+              "character": 5
+            },
+            "name": "extends BaseLinkProps,\n    RefAttributes<HTMLAnchorElement>,\n    AnchorHTMLAttributes<HTMLAnchorElement>",
+            "typeArgs": [
+              {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 45,
+                  "character": 26
+                },
+                "name": "HTMLAnchorElement"
+              }
+            ],
+            "expression": {
+              "__schema": "TypeRefSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 45,
+                "character": 5
+              },
+              "name": "AnchorHTMLAttributes<T>",
+              "packageName": "/tmp/capsules-root/sign-capsules/2023-11-28/13d9ft9/teambit.base-react_navigation_link@c7ed551216d42f4bbb8e8efaaff08c1c7ffa29a5/link.type.ts"
+            }
+          }
+        ]
+      },
+      {
+        "__schema": "TypeSchema",
+        "location": {
+          "filePath": "link.type.ts",
+          "line": 6,
+          "character": 1
+        },
+        "doc": {
+          "__schema": "DocSchema",
+          "location": {
+            "filePath": "link.type.ts",
+            "line": 3,
+            "character": 1
+          },
+          "raw": "/**\n * A standard Link component interface.\n */",
+          "comment": "A standard Link component interface."
+        },
+        "signature": "type LinkType = React.FunctionComponent<LinkProps> | React.ComponentClass<LinkProps, any>",
+        "name": "LinkType",
+        "type": {
+          "__schema": "TypeRefSchema",
+          "location": {
+            "filePath": "link.type.ts",
+            "line": 6,
+            "character": 24
+          },
+          "name": "ComponentType",
+          "packageName": "react",
+          "typeArgs": [
+            {
+              "__schema": "TypeRefSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 6,
+                "character": 38
+              },
+              "name": "LinkProps"
+            }
+          ]
+        }
+      },
+      {
+        "__schema": "TypeSchema",
+        "location": {
+          "filePath": "link.type.ts",
+          "line": 47,
+          "character": 1
+        },
+        "signature": "type Location<StateType = {}> = {\n    hash: string;\n    pathname: string;\n    search: string;\n    state?: StateType;\n    key?: string;\n}",
+        "name": "Location",
+        "type": {
+          "__schema": "TypeLiteralSchema",
+          "location": {
+            "filePath": "link.type.ts",
+            "line": 47,
+            "character": 40
+          },
+          "members": [
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 49,
+                "character": 3
+              },
+              "doc": {
+                "__schema": "DocSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 48,
+                  "character": 3
+                },
+                "raw": "/** Returns the Location object's URL's fragment (includes leading \"#\" if non-empty). */",
+                "comment": "Returns the Location object's URL's fragment (includes leading \"#\" if non-empty)."
+              },
+              "signature": "(property) hash: string",
+              "name": "hash",
+              "type": {
+                "__schema": "KeywordTypeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 49,
+                  "character": 9
+                },
+                "name": "string"
+              },
+              "isOptional": false
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 51,
+                "character": 3
+              },
+              "signature": "(property) pathname: string",
+              "name": "pathname",
+              "type": {
+                "__schema": "KeywordTypeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 51,
+                  "character": 13
+                },
+                "name": "string"
+              },
+              "isOptional": false
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 53,
+                "character": 3
+              },
+              "signature": "(property) search: string",
+              "name": "search",
+              "type": {
+                "__schema": "KeywordTypeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 53,
+                  "character": 11
+                },
+                "name": "string"
+              },
+              "isOptional": false
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 56,
+                "character": 3
+              },
+              "signature": "(property) state?: StateType = {}",
+              "name": "state",
+              "type": {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 56,
+                  "character": 11
+                },
+                "name": "StateType"
+              },
+              "isOptional": true
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 58,
+                "character": 3
+              },
+              "signature": "(property) key?: string",
+              "name": "key",
+              "type": {
+                "__schema": "KeywordTypeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 58,
+                  "character": 9
+                },
+                "name": "string"
+              },
+              "isOptional": true
+            }
+          ]
+        }
+      },
+      {
+        "__schema": "TypeSchema",
+        "location": {
+          "filePath": "link.type.ts",
+          "line": 61,
+          "character": 1
+        },
+        "signature": "type UseLocation<StateType extends {} = {}> = () => Location<StateType>",
+        "name": "UseLocation",
+        "type": {
+          "__schema": "FunctionLikeSchema",
+          "location": {
+            "filePath": "link.type.ts",
+            "line": 61,
+            "character": 54
+          },
+          "signature": "(): Location<StateType>",
+          "name": "",
+          "params": [],
+          "returnType": {
+            "__schema": "TypeRefSchema",
+            "location": {
+              "filePath": "link.type.ts",
+              "line": 61,
+              "character": 60
+            },
+            "name": "Location",
+            "typeArgs": [
+              {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 61,
+                  "character": 69
+                },
+                "name": "StateType"
+              }
+            ]
+          },
+          "modifiers": []
+        }
+      },
+      {
+        "__schema": "InterfaceSchema",
+        "location": {
+          "filePath": "link.type.ts",
+          "line": 63,
+          "character": 1
+        },
+        "signature": "interface Navigator",
+        "name": "Navigator",
+        "members": [
+          {
+            "__schema": "FunctionLikeSchema",
+            "location": {
+              "filePath": "link.type.ts",
+              "line": 64,
+              "character": 3
+            },
+            "signature": "(to: string, options?: { \u001b[1mreplace\u001b[22m?: boolean }): void",
+            "name": "",
+            "params": [
+              {
+                "__schema": "ParameterSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 64,
+                  "character": 4
+                },
+                "name": "to",
+                "type": {
+                  "__schema": "KeywordTypeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 64,
+                    "character": 8
+                  },
+                  "name": "string"
+                },
+                "isOptional": false,
+                "isSpread": false
+              },
+              {
+                "__schema": "ParameterSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 64,
+                  "character": 16
+                },
+                "name": "options",
+                "type": {
+                  "__schema": "TypeLiteralSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 64,
+                    "character": 26
+                  },
+                  "members": [
+                    {
+                      "__schema": "VariableLikeSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 64,
+                        "character": 28
+                      },
+                      "signature": "(property) replace?: boolean",
+                      "name": "replace",
+                      "type": {
+                        "__schema": "KeywordTypeSchema",
+                        "location": {
+                          "filePath": "link.type.ts",
+                          "line": 64,
+                          "character": 38
+                        },
+                        "name": "boolean"
+                      },
+                      "isOptional": true
+                    }
+                  ]
+                },
+                "isOptional": true,
+                "isSpread": false
+              }
+            ],
+            "returnType": {
+              "__schema": "KeywordTypeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 64,
+                "character": 50
+              },
+              "name": "void"
+            },
+            "modifiers": []
+          },
+          {
+            "__schema": "FunctionLikeSchema",
+            "location": {
+              "filePath": "link.type.ts",
+              "line": 65,
+              "character": 3
+            },
+            "signature": "(delta: number): void",
+            "name": "",
+            "params": [
+              {
+                "__schema": "ParameterSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 65,
+                  "character": 4
+                },
+                "name": "delta",
+                "type": {
+                  "__schema": "KeywordTypeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 65,
+                    "character": 11
+                  },
+                  "name": "number"
+                },
+                "isOptional": false,
+                "isSpread": false
+              }
+            ],
+            "returnType": {
+              "__schema": "KeywordTypeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 65,
+                "character": 20
+              },
+              "name": "void"
+            },
+            "modifiers": []
+          }
+        ],
+        "extendsNodes": []
+      },
+      {
+        "__schema": "TypeSchema",
+        "location": {
+          "filePath": "link.type.ts",
+          "line": 68,
+          "character": 1
+        },
+        "signature": "type UseNavigate = () => Navigator",
+        "name": "UseNavigate",
+        "type": {
+          "__schema": "FunctionLikeSchema",
+          "location": {
+            "filePath": "link.type.ts",
+            "line": 68,
+            "character": 27
+          },
+          "signature": "(): Navigator",
+          "name": "",
+          "params": [],
+          "returnType": {
+            "__schema": "TypeRefSchema",
+            "location": {
+              "filePath": "link.type.ts",
+              "line": 68,
+              "character": 33
+            },
+            "name": "Navigator"
+          },
+          "modifiers": []
+        }
+      },
+      {
+        "__schema": "FunctionLikeSchema",
+        "location": {
+          "filePath": "use-location.tsx",
+          "line": 4,
+          "character": 1
+        },
+        "signature": "function useLocation(): Location | undefined",
+        "name": "useLocation",
+        "params": [],
+        "returnType": {
+          "__schema": "TypeUnionSchema",
+          "location": {
+            "filePath": "use-location.tsx",
+            "line": 4,
+            "character": 32
+          },
+          "types": [
+            {
+              "__schema": "TypeRefSchema",
+              "location": {
+                "filePath": "use-location.tsx",
+                "line": 4,
+                "character": 32
+              },
+              "name": "Location"
+            },
+            {
+              "__schema": "KeywordTypeSchema",
+              "location": {
+                "filePath": "use-location.tsx",
+                "line": 4,
+                "character": 43
+              },
+              "name": "undefined"
+            }
+          ]
+        },
+        "modifiers": [
+          "export"
+        ]
+      },
+      {
+        "__schema": "FunctionLikeSchema",
+        "location": {
+          "filePath": "use-navigate.tsx",
+          "line": 4,
+          "character": 1
+        },
+        "signature": "function useNavigate(): Navigator",
+        "name": "useNavigate",
+        "params": [],
+        "returnType": {
+          "__schema": "TypeRefSchema",
+          "location": {
+            "filePath": "use-navigate.tsx",
+            "line": 4,
+            "character": 1
+          },
+          "name": "Navigator"
+        },
+        "modifiers": [
+          "export"
+        ]
+      },
+      {
+        "__schema": "FunctionLikeSchema",
+        "location": {
+          "filePath": "navigation-provider.tsx",
+          "line": 27,
+          "character": 1
+        },
+        "doc": {
+          "__schema": "DocSchema",
+          "location": {
+            "filePath": "navigation-provider.tsx",
+            "line": 23,
+            "character": 1
+          },
+          "raw": "/**\n * Gets routing components from context.\n * (defaults to native components)\n */",
+          "comment": "Gets routing components from context.\n(defaults to native components)"
+        },
+        "signature": "function useNavigation(): RouterContextType",
+        "name": "useNavigation",
+        "params": [],
+        "returnType": {
+          "__schema": "TypeRefSchema",
+          "location": {
+            "filePath": "navigation-provider.tsx",
+            "line": 27,
+            "character": 1
+          },
+          "name": "RouterContextType"
+        },
+        "modifiers": [
+          "export"
+        ]
+      },
+      {
+        "__schema": "ReactSchema",
+        "location": {
+          "filePath": "navigation-provider.tsx",
+          "line": 32,
+          "character": 1
+        },
+        "signature": "function NavigationProvider({ children, implementation, }: {\n    children: ReactNode;\n    implementation: RouterContextType;\n}): React.JSX.Element",
+        "name": "NavigationProvider",
+        "props": {
+          "__schema": "ParameterSchema",
+          "location": {
+            "filePath": "navigation-provider.tsx",
+            "line": 32,
+            "character": 36
+          },
+          "name": "{ children, implementation }",
+          "type": {
+            "__schema": "TypeLiteralSchema",
+            "location": {
+              "filePath": "navigation-provider.tsx",
+              "line": 35,
+              "character": 4
+            },
+            "members": [
+              {
+                "__schema": "VariableLikeSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 36,
+                  "character": 3
+                },
+                "signature": "(property) children: React.ReactNode",
+                "name": "children",
+                "type": {
+                  "__schema": "TypeRefSchema",
+                  "location": {
+                    "filePath": "navigation-provider.tsx",
+                    "line": 36,
+                    "character": 13
+                  },
+                  "name": "ReactNode",
+                  "packageName": "react"
+                },
+                "isOptional": false
+              },
+              {
+                "__schema": "VariableLikeSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 37,
+                  "character": 3
+                },
+                "signature": "(property) implementation: RouterContextType",
+                "name": "implementation",
+                "type": {
+                  "__schema": "TypeRefSchema",
+                  "location": {
+                    "filePath": "navigation-provider.tsx",
+                    "line": 37,
+                    "character": 3
+                  },
+                  "name": "RouterContextType"
+                },
+                "isOptional": false
+              }
+            ]
+          },
+          "isOptional": false,
+          "objectBindingNodes": [
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "navigation-provider.tsx",
+                "line": 36,
+                "character": 3
+              },
+              "signature": "(property) children: React.ReactNode",
+              "name": "children",
+              "type": {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 36,
+                  "character": 13
+                },
+                "name": "ReactNode",
+                "packageName": "react"
+              },
+              "isOptional": false
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "navigation-provider.tsx",
+                "line": 37,
+                "character": 3
+              },
+              "signature": "(property) implementation: RouterContextType",
+              "name": "implementation",
+              "type": {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 37,
+                  "character": 3
+                },
+                "name": "RouterContextType"
+              },
+              "isOptional": false
+            }
+          ],
+          "isSpread": false
+        },
+        "returnType": {
+          "__schema": "TypeRefSchema",
+          "location": {
+            "filePath": "navigation-provider.tsx",
+            "line": 32,
+            "character": 1
+          },
+          "name": "React.JSX.Element",
+          "packageName": "react"
+        },
+        "modifiers": [
+          "export"
+        ]
+      },
+      {
+        "__schema": "TypeSchema",
+        "location": {
+          "filePath": "navigation-provider.tsx",
+          "line": 4,
+          "character": 1
+        },
+        "signature": "type RouterContextType = {\n    Link?: LinkType;\n    useLocation?: UseLocation;\n    useNavigate?: UseNavigate;\n}",
+        "name": "RouterContextType",
+        "type": {
+          "__schema": "TypeLiteralSchema",
+          "location": {
+            "filePath": "navigation-provider.tsx",
+            "line": 4,
+            "character": 33
+          },
+          "members": [
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "navigation-provider.tsx",
+                "line": 8,
+                "character": 3
+              },
+              "doc": {
+                "__schema": "DocSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 5,
+                  "character": 3
+                },
+                "raw": "/**\n   * link implementation.\n   */",
+                "comment": "link implementation."
+              },
+              "signature": "(property) Link?: LinkType",
+              "name": "Link",
+              "type": {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 8,
+                  "character": 3
+                },
+                "name": "LinkType"
+              },
+              "isOptional": true
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "navigation-provider.tsx",
+                "line": 13,
+                "character": 3
+              },
+              "doc": {
+                "__schema": "DocSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 10,
+                  "character": 3
+                },
+                "raw": "/**\n   * useLocation implementation.\n   */",
+                "comment": "useLocation implementation."
+              },
+              "signature": "(property) useLocation?: UseLocation<{}>",
+              "name": "useLocation",
+              "type": {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 13,
+                  "character": 17
+                },
+                "name": "UseLocation"
+              },
+              "isOptional": true
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "navigation-provider.tsx",
+                "line": 18,
+                "character": 3
+              },
+              "doc": {
+                "__schema": "DocSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 15,
+                  "character": 3
+                },
+                "raw": "/**\n   * navigate to another page\n   */",
+                "comment": "navigate to another page"
+              },
+              "signature": "(property) useNavigate?: UseNavigate",
+              "name": "useNavigate",
+              "type": {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 18,
+                  "character": 3
+                },
+                "name": "UseNavigate"
+              },
+              "isOptional": true
+            }
+          ]
+        }
+      }
+    ],
+    "internals": []
+  },
+  "internals": [
+    {
+      "__schema": "ModuleSchema",
+      "location": {
+        "filePath": "link.type.ts",
+        "line": 1,
+        "character": 1
+      },
+      "exports": [
+        {
+          "__schema": "TypeSchema",
+          "location": {
+            "filePath": "link.type.ts",
+            "line": 6,
+            "character": 1
+          },
+          "doc": {
+            "__schema": "DocSchema",
+            "location": {
+              "filePath": "link.type.ts",
+              "line": 3,
+              "character": 1
+            },
+            "raw": "/**\n * A standard Link component interface.\n */",
+            "comment": "A standard Link component interface."
+          },
+          "signature": "type LinkType = React.FunctionComponent<LinkProps> | React.ComponentClass<LinkProps, any>",
+          "name": "LinkType",
+          "type": {
+            "__schema": "TypeRefSchema",
+            "location": {
+              "filePath": "link.type.ts",
+              "line": 6,
+              "character": 24
+            },
+            "name": "ComponentType",
+            "packageName": "react",
+            "typeArgs": [
+              {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 6,
+                  "character": 38
+                },
+                "name": "LinkProps"
+              }
+            ]
+          }
+        },
+        {
+          "__schema": "InterfaceSchema",
+          "location": {
+            "filePath": "link.type.ts",
+            "line": 12,
+            "character": 1
+          },
+          "doc": {
+            "__schema": "DocSchema",
+            "location": {
+              "filePath": "link.type.ts",
+              "line": 8,
+              "character": 1
+            },
+            "raw": "/**\n * A standard API schema for a Link component.\n */",
+            "comment": "A standard API schema for a Link component."
+          },
+          "signature": "interface BaseLinkProps",
+          "name": "BaseLinkProps",
+          "members": [
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 16,
+                "character": 3
+              },
+              "doc": {
+                "__schema": "DocSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 13,
+                  "character": 3
+                },
+                "raw": "/**\n   * key-value state for stateful routing systems. (Has to be supported by the speicifc link implementation)\n   */",
+                "comment": "key-value state for stateful routing systems. (Has to be supported by the speicifc link implementation)"
+              },
+              "signature": "(property) BaseLinkProps.state?: Record<string, any>",
+              "name": "state",
+              "type": {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 16,
+                  "character": 11
+                },
+                "name": "Record",
+                "typeArgs": [
+                  {
+                    "__schema": "KeywordTypeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 16,
+                      "character": 18
+                    },
+                    "name": "string"
+                  },
+                  {
+                    "__schema": "KeywordTypeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 16,
+                      "character": 26
+                    },
+                    "name": "any"
+                  }
+                ]
+              },
+              "isOptional": true
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 21,
+                "character": 3
+              },
+              "doc": {
+                "__schema": "DocSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 18,
+                  "character": 3
+                },
+                "raw": "/**\n   * force the use of a native `a` element and ignore the contextual implemented Link.\n   */",
+                "comment": "force the use of a native `a` element and ignore the contextual implemented Link."
+              },
+              "signature": "(property) BaseLinkProps.native?: boolean",
+              "name": "native",
+              "type": {
+                "__schema": "KeywordTypeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 21,
+                  "character": 12
+                },
+                "name": "boolean"
+              },
+              "isOptional": true
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 24,
+                "character": 3
+              },
+              "doc": {
+                "__schema": "DocSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 23,
+                  "character": 3
+                },
+                "raw": "/** open the link in a new page (renders as native link) */",
+                "comment": "open the link in a new page (renders as native link)"
+              },
+              "signature": "(property) BaseLinkProps.external?: boolean",
+              "name": "external",
+              "type": {
+                "__schema": "KeywordTypeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 24,
+                  "character": 14
+                },
+                "name": "boolean"
+              },
+              "isOptional": true
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 27,
+                "character": 3
+              },
+              "doc": {
+                "__schema": "DocSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 26,
+                  "character": 3
+                },
+                "raw": "/** class to apply when `href` matches the current location */",
+                "comment": "class to apply when `href` matches the current location"
+              },
+              "signature": "(property) BaseLinkProps.activeClassName?: string",
+              "name": "activeClassName",
+              "type": {
+                "__schema": "KeywordTypeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 27,
+                  "character": 21
+                },
+                "name": "string"
+              },
+              "isOptional": true
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 29,
+                "character": 3
+              },
+              "doc": {
+                "__schema": "DocSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 28,
+                  "character": 3
+                },
+                "raw": "/** styles to apply when `href` matches the current location */",
+                "comment": "styles to apply when `href` matches the current location"
+              },
+              "signature": "(property) BaseLinkProps.activeStyle?: React.CSSProperties",
+              "name": "activeStyle",
+              "type": {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 29,
+                  "character": 17
+                },
+                "name": "React.CSSProperties"
+              },
+              "isOptional": true
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 34,
+                "character": 3
+              },
+              "doc": {
+                "__schema": "DocSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 30,
+                  "character": 3
+                },
+                "raw": "/**\n   * explicitly apply active styles.\n   * If left undefined, the link will automatically become \"active\" if href matches the current url.\n   */",
+                "comment": "explicitly apply active styles.\nIf left undefined, the link will automatically become \"active\" if href matches the current url."
+              },
+              "signature": "(property) BaseLinkProps.active?: boolean",
+              "name": "active",
+              "type": {
+                "__schema": "KeywordTypeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 34,
+                  "character": 12
+                },
+                "name": "boolean"
+              },
+              "isOptional": true
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 36,
+                "character": 3
+              },
+              "doc": {
+                "__schema": "DocSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 35,
+                  "character": 3
+                },
+                "raw": "/** href should match url exactly to set as active, when using active=\"auto\" */",
+                "comment": "href should match url exactly to set as active, when using active=\"auto\""
+              },
+              "signature": "(property) BaseLinkProps.exact?: boolean",
+              "name": "exact",
+              "type": {
+                "__schema": "KeywordTypeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 36,
+                  "character": 11
+                },
+                "name": "boolean"
+              },
+              "isOptional": true
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 38,
+                "character": 3
+              },
+              "doc": {
+                "__schema": "DocSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 37,
+                  "character": 3
+                },
+                "raw": "/** include trailing slash on the location pathname, when using active=\"auto\"  */",
+                "comment": "include trailing slash on the location pathname, when using active=\"auto\""
+              },
+              "signature": "(property) BaseLinkProps.strict?: boolean",
+              "name": "strict",
+              "type": {
+                "__schema": "KeywordTypeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 38,
+                  "character": 12
+                },
+                "name": "boolean"
+              },
+              "isOptional": true
+            },
+            {
+              "__schema": "VariableLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 39,
+                "character": 3
+              },
+              "signature": "(property) BaseLinkProps.nonce?: string",
+              "name": "nonce",
+              "type": {
+                "__schema": "KeywordTypeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 39,
+                  "character": 11
+                },
+                "name": "string"
+              },
+              "isOptional": true
+            }
+          ],
+          "extendsNodes": []
+        },
+        {
+          "__schema": "InterfaceSchema",
+          "location": {
+            "filePath": "link.type.ts",
+            "line": 42,
+            "character": 1
+          },
+          "signature": "interface LinkProps",
+          "name": "LinkProps",
+          "members": [],
+          "extendsNodes": [
+            {
+              "__schema": "ExpressionWithTypeArgumentsSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 43,
+                "character": 11
+              },
+              "name": "extends BaseLinkProps,\n    RefAttributes<HTMLAnchorElement>,\n    AnchorHTMLAttributes<HTMLAnchorElement>",
+              "typeArgs": [],
+              "expression": {
+                "__schema": "InterfaceSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 12,
+                  "character": 1
+                },
+                "name": "BaseLinkProps",
+                "signature": "interface BaseLinkProps",
+                "extendsNodes": [],
+                "members": [
+                  {
+                    "__schema": "VariableLikeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 16,
+                      "character": 3
+                    },
+                    "name": "state",
+                    "signature": "(property) BaseLinkProps.state?: Record<string, any>",
+                    "isOptional": true,
+                    "type": {
+                      "__schema": "TypeRefSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 16,
+                        "character": 11
+                      },
+                      "name": "Record",
+                      "typeArgs": [
+                        {
+                          "__schema": "KeywordTypeSchema",
+                          "location": {
+                            "filePath": "link.type.ts",
+                            "line": 16,
+                            "character": 18
+                          },
+                          "name": "string"
+                        },
+                        {
+                          "__schema": "KeywordTypeSchema",
+                          "location": {
+                            "filePath": "link.type.ts",
+                            "line": 16,
+                            "character": 26
+                          },
+                          "name": "any"
+                        }
+                      ]
+                    },
+                    "doc": {
+                      "__schema": "DocSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 13,
+                        "character": 3
+                      },
+                      "raw": "/**\n   * key-value state for stateful routing systems. (Has to be supported by the speicifc link implementation)\n   */",
+                      "comment": "key-value state for stateful routing systems. (Has to be supported by the speicifc link implementation)"
+                    }
+                  },
+                  {
+                    "__schema": "VariableLikeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 21,
+                      "character": 3
+                    },
+                    "name": "native",
+                    "signature": "(property) BaseLinkProps.native?: boolean",
+                    "isOptional": true,
+                    "type": {
+                      "__schema": "KeywordTypeSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 21,
+                        "character": 12
+                      },
+                      "name": "boolean"
+                    },
+                    "doc": {
+                      "__schema": "DocSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 18,
+                        "character": 3
+                      },
+                      "raw": "/**\n   * force the use of a native `a` element and ignore the contextual implemented Link.\n   */",
+                      "comment": "force the use of a native `a` element and ignore the contextual implemented Link."
+                    }
+                  },
+                  {
+                    "__schema": "VariableLikeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 24,
+                      "character": 3
+                    },
+                    "name": "external",
+                    "signature": "(property) BaseLinkProps.external?: boolean",
+                    "isOptional": true,
+                    "type": {
+                      "__schema": "KeywordTypeSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 24,
+                        "character": 14
+                      },
+                      "name": "boolean"
+                    },
+                    "doc": {
+                      "__schema": "DocSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 23,
+                        "character": 3
+                      },
+                      "raw": "/** open the link in a new page (renders as native link) */",
+                      "comment": "open the link in a new page (renders as native link)"
+                    }
+                  },
+                  {
+                    "__schema": "VariableLikeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 27,
+                      "character": 3
+                    },
+                    "name": "activeClassName",
+                    "signature": "(property) BaseLinkProps.activeClassName?: string",
+                    "isOptional": true,
+                    "type": {
+                      "__schema": "KeywordTypeSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 27,
+                        "character": 21
+                      },
+                      "name": "string"
+                    },
+                    "doc": {
+                      "__schema": "DocSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 26,
+                        "character": 3
+                      },
+                      "raw": "/** class to apply when `href` matches the current location */",
+                      "comment": "class to apply when `href` matches the current location"
+                    }
+                  },
+                  {
+                    "__schema": "VariableLikeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 29,
+                      "character": 3
+                    },
+                    "name": "activeStyle",
+                    "signature": "(property) BaseLinkProps.activeStyle?: React.CSSProperties",
+                    "isOptional": true,
+                    "type": {
+                      "__schema": "TypeRefSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 29,
+                        "character": 17
+                      },
+                      "name": "React.CSSProperties"
+                    },
+                    "doc": {
+                      "__schema": "DocSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 28,
+                        "character": 3
+                      },
+                      "raw": "/** styles to apply when `href` matches the current location */",
+                      "comment": "styles to apply when `href` matches the current location"
+                    }
+                  },
+                  {
+                    "__schema": "VariableLikeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 34,
+                      "character": 3
+                    },
+                    "name": "active",
+                    "signature": "(property) BaseLinkProps.active?: boolean",
+                    "isOptional": true,
+                    "type": {
+                      "__schema": "KeywordTypeSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 34,
+                        "character": 12
+                      },
+                      "name": "boolean"
+                    },
+                    "doc": {
+                      "__schema": "DocSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 30,
+                        "character": 3
+                      },
+                      "raw": "/**\n   * explicitly apply active styles.\n   * If left undefined, the link will automatically become \"active\" if href matches the current url.\n   */",
+                      "comment": "explicitly apply active styles.\nIf left undefined, the link will automatically become \"active\" if href matches the current url."
+                    }
+                  },
+                  {
+                    "__schema": "VariableLikeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 36,
+                      "character": 3
+                    },
+                    "name": "exact",
+                    "signature": "(property) BaseLinkProps.exact?: boolean",
+                    "isOptional": true,
+                    "type": {
+                      "__schema": "KeywordTypeSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 36,
+                        "character": 11
+                      },
+                      "name": "boolean"
+                    },
+                    "doc": {
+                      "__schema": "DocSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 35,
+                        "character": 3
+                      },
+                      "raw": "/** href should match url exactly to set as active, when using active=\"auto\" */",
+                      "comment": "href should match url exactly to set as active, when using active=\"auto\""
+                    }
+                  },
+                  {
+                    "__schema": "VariableLikeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 38,
+                      "character": 3
+                    },
+                    "name": "strict",
+                    "signature": "(property) BaseLinkProps.strict?: boolean",
+                    "isOptional": true,
+                    "type": {
+                      "__schema": "KeywordTypeSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 38,
+                        "character": 12
+                      },
+                      "name": "boolean"
+                    },
+                    "doc": {
+                      "__schema": "DocSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 37,
+                        "character": 3
+                      },
+                      "raw": "/** include trailing slash on the location pathname, when using active=\"auto\"  */",
+                      "comment": "include trailing slash on the location pathname, when using active=\"auto\""
+                    }
+                  },
+                  {
+                    "__schema": "VariableLikeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 39,
+                      "character": 3
+                    },
+                    "name": "nonce",
+                    "signature": "(property) BaseLinkProps.nonce?: string",
+                    "isOptional": true,
+                    "type": {
+                      "__schema": "KeywordTypeSchema",
+                      "location": {
+                        "filePath": "link.type.ts",
+                        "line": 39,
+                        "character": 11
+                      },
+                      "name": "string"
+                    }
+                  }
+                ],
+                "doc": {
+                  "__schema": "DocSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 8,
+                    "character": 1
+                  },
+                  "raw": "/**\n * A standard API schema for a Link component.\n */",
+                  "comment": "A standard API schema for a Link component."
+                }
+              }
+            },
+            {
+              "__schema": "ExpressionWithTypeArgumentsSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 44,
+                "character": 5
+              },
+              "name": "extends BaseLinkProps,\n    RefAttributes<HTMLAnchorElement>,\n    AnchorHTMLAttributes<HTMLAnchorElement>",
+              "typeArgs": [
+                {
+                  "__schema": "TypeRefSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 44,
+                    "character": 19
+                  },
+                  "name": "HTMLAnchorElement"
+                }
+              ],
+              "expression": {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 44,
+                  "character": 5
+                },
+                "name": "RefAttributes<T>",
+                "packageName": "/tmp/capsules-root/sign-capsules/2023-11-28/13d9ft9/teambit.base-react_navigation_link@c7ed551216d42f4bbb8e8efaaff08c1c7ffa29a5/link.type.ts"
+              }
+            },
+            {
+              "__schema": "ExpressionWithTypeArgumentsSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 45,
+                "character": 5
+              },
+              "name": "extends BaseLinkProps,\n    RefAttributes<HTMLAnchorElement>,\n    AnchorHTMLAttributes<HTMLAnchorElement>",
+              "typeArgs": [
+                {
+                  "__schema": "TypeRefSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 45,
+                    "character": 26
+                  },
+                  "name": "HTMLAnchorElement"
+                }
+              ],
+              "expression": {
+                "__schema": "TypeRefSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 45,
+                  "character": 5
+                },
+                "name": "AnchorHTMLAttributes<T>",
+                "packageName": "/tmp/capsules-root/sign-capsules/2023-11-28/13d9ft9/teambit.base-react_navigation_link@c7ed551216d42f4bbb8e8efaaff08c1c7ffa29a5/link.type.ts"
+              }
+            }
+          ]
+        },
+        {
+          "__schema": "TypeSchema",
+          "location": {
+            "filePath": "link.type.ts",
+            "line": 47,
+            "character": 1
+          },
+          "signature": "type Location<StateType = {}> = {\n    hash: string;\n    pathname: string;\n    search: string;\n    state?: StateType;\n    key?: string;\n}",
+          "name": "Location",
+          "type": {
+            "__schema": "TypeLiteralSchema",
+            "location": {
+              "filePath": "link.type.ts",
+              "line": 47,
+              "character": 40
+            },
+            "members": [
+              {
+                "__schema": "VariableLikeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 49,
+                  "character": 3
+                },
+                "doc": {
+                  "__schema": "DocSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 48,
+                    "character": 3
+                  },
+                  "raw": "/** Returns the Location object's URL's fragment (includes leading \"#\" if non-empty). */",
+                  "comment": "Returns the Location object's URL's fragment (includes leading \"#\" if non-empty)."
+                },
+                "signature": "(property) hash: string",
+                "name": "hash",
+                "type": {
+                  "__schema": "KeywordTypeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 49,
+                    "character": 9
+                  },
+                  "name": "string"
+                },
+                "isOptional": false
+              },
+              {
+                "__schema": "VariableLikeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 51,
+                  "character": 3
+                },
+                "signature": "(property) pathname: string",
+                "name": "pathname",
+                "type": {
+                  "__schema": "KeywordTypeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 51,
+                    "character": 13
+                  },
+                  "name": "string"
+                },
+                "isOptional": false
+              },
+              {
+                "__schema": "VariableLikeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 53,
+                  "character": 3
+                },
+                "signature": "(property) search: string",
+                "name": "search",
+                "type": {
+                  "__schema": "KeywordTypeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 53,
+                    "character": 11
+                  },
+                  "name": "string"
+                },
+                "isOptional": false
+              },
+              {
+                "__schema": "VariableLikeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 56,
+                  "character": 3
+                },
+                "signature": "(property) state?: StateType = {}",
+                "name": "state",
+                "type": {
+                  "__schema": "TypeRefSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 56,
+                    "character": 11
+                  },
+                  "name": "StateType"
+                },
+                "isOptional": true
+              },
+              {
+                "__schema": "VariableLikeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 58,
+                  "character": 3
+                },
+                "signature": "(property) key?: string",
+                "name": "key",
+                "type": {
+                  "__schema": "KeywordTypeSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 58,
+                    "character": 9
+                  },
+                  "name": "string"
+                },
+                "isOptional": true
+              }
+            ]
+          }
+        },
+        {
+          "__schema": "TypeSchema",
+          "location": {
+            "filePath": "link.type.ts",
+            "line": 61,
+            "character": 1
+          },
+          "signature": "type UseLocation<StateType extends {} = {}> = () => Location<StateType>",
+          "name": "UseLocation",
+          "type": {
+            "__schema": "FunctionLikeSchema",
+            "location": {
+              "filePath": "link.type.ts",
+              "line": 61,
+              "character": 54
+            },
+            "signature": "(): Location<StateType>",
+            "name": "",
+            "params": [],
+            "returnType": {
+              "__schema": "TypeRefSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 61,
+                "character": 60
+              },
+              "name": "Location",
+              "typeArgs": [
+                {
+                  "__schema": "TypeRefSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 61,
+                    "character": 69
+                  },
+                  "name": "StateType"
+                }
+              ]
+            },
+            "modifiers": []
+          }
+        },
+        {
+          "__schema": "InterfaceSchema",
+          "location": {
+            "filePath": "link.type.ts",
+            "line": 63,
+            "character": 1
+          },
+          "signature": "interface Navigator",
+          "name": "Navigator",
+          "members": [
+            {
+              "__schema": "FunctionLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 64,
+                "character": 3
+              },
+              "signature": "(to: string, options?: { \u001b[1mreplace\u001b[22m?: boolean }): void",
+              "name": "",
+              "params": [
+                {
+                  "__schema": "ParameterSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 64,
+                    "character": 4
+                  },
+                  "name": "to",
+                  "type": {
+                    "__schema": "KeywordTypeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 64,
+                      "character": 8
+                    },
+                    "name": "string"
+                  },
+                  "isOptional": false,
+                  "isSpread": false
+                },
+                {
+                  "__schema": "ParameterSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 64,
+                    "character": 16
+                  },
+                  "name": "options",
+                  "type": {
+                    "__schema": "TypeLiteralSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 64,
+                      "character": 26
+                    },
+                    "members": [
+                      {
+                        "__schema": "VariableLikeSchema",
+                        "location": {
+                          "filePath": "link.type.ts",
+                          "line": 64,
+                          "character": 28
+                        },
+                        "signature": "(property) replace?: boolean",
+                        "name": "replace",
+                        "type": {
+                          "__schema": "KeywordTypeSchema",
+                          "location": {
+                            "filePath": "link.type.ts",
+                            "line": 64,
+                            "character": 38
+                          },
+                          "name": "boolean"
+                        },
+                        "isOptional": true
+                      }
+                    ]
+                  },
+                  "isOptional": true,
+                  "isSpread": false
+                }
+              ],
+              "returnType": {
+                "__schema": "KeywordTypeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 64,
+                  "character": 50
+                },
+                "name": "void"
+              },
+              "modifiers": []
+            },
+            {
+              "__schema": "FunctionLikeSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 65,
+                "character": 3
+              },
+              "signature": "(delta: number): void",
+              "name": "",
+              "params": [
+                {
+                  "__schema": "ParameterSchema",
+                  "location": {
+                    "filePath": "link.type.ts",
+                    "line": 65,
+                    "character": 4
+                  },
+                  "name": "delta",
+                  "type": {
+                    "__schema": "KeywordTypeSchema",
+                    "location": {
+                      "filePath": "link.type.ts",
+                      "line": 65,
+                      "character": 11
+                    },
+                    "name": "number"
+                  },
+                  "isOptional": false,
+                  "isSpread": false
+                }
+              ],
+              "returnType": {
+                "__schema": "KeywordTypeSchema",
+                "location": {
+                  "filePath": "link.type.ts",
+                  "line": 65,
+                  "character": 20
+                },
+                "name": "void"
+              },
+              "modifiers": []
+            }
+          ],
+          "extendsNodes": []
+        },
+        {
+          "__schema": "TypeSchema",
+          "location": {
+            "filePath": "link.type.ts",
+            "line": 68,
+            "character": 1
+          },
+          "signature": "type UseNavigate = () => Navigator",
+          "name": "UseNavigate",
+          "type": {
+            "__schema": "FunctionLikeSchema",
+            "location": {
+              "filePath": "link.type.ts",
+              "line": 68,
+              "character": 27
+            },
+            "signature": "(): Navigator",
+            "name": "",
+            "params": [],
+            "returnType": {
+              "__schema": "TypeRefSchema",
+              "location": {
+                "filePath": "link.type.ts",
+                "line": 68,
+                "character": 33
+              },
+              "name": "Navigator"
+            },
+            "modifiers": []
+          }
+        }
+      ],
+      "internals": []
+    },
+    {
+      "__schema": "ModuleSchema",
+      "location": {
+        "filePath": "navigation-provider.tsx",
+        "line": 1,
+        "character": 1
+      },
+      "exports": [
+        {
+          "__schema": "TypeSchema",
+          "location": {
+            "filePath": "navigation-provider.tsx",
+            "line": 4,
+            "character": 1
+          },
+          "signature": "type RouterContextType = {\n    Link?: LinkType;\n    useLocation?: UseLocation;\n    useNavigate?: UseNavigate;\n}",
+          "name": "RouterContextType",
+          "type": {
+            "__schema": "TypeLiteralSchema",
+            "location": {
+              "filePath": "navigation-provider.tsx",
+              "line": 4,
+              "character": 33
+            },
+            "members": [
+              {
+                "__schema": "VariableLikeSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 8,
+                  "character": 3
+                },
+                "doc": {
+                  "__schema": "DocSchema",
+                  "location": {
+                    "filePath": "navigation-provider.tsx",
+                    "line": 5,
+                    "character": 3
+                  },
+                  "raw": "/**\n   * link implementation.\n   */",
+                  "comment": "link implementation."
+                },
+                "signature": "(property) Link?: LinkType",
+                "name": "Link",
+                "type": {
+                  "__schema": "TypeRefSchema",
+                  "location": {
+                    "filePath": "navigation-provider.tsx",
+                    "line": 8,
+                    "character": 3
+                  },
+                  "name": "LinkType"
+                },
+                "isOptional": true
+              },
+              {
+                "__schema": "VariableLikeSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 13,
+                  "character": 3
+                },
+                "doc": {
+                  "__schema": "DocSchema",
+                  "location": {
+                    "filePath": "navigation-provider.tsx",
+                    "line": 10,
+                    "character": 3
+                  },
+                  "raw": "/**\n   * useLocation implementation.\n   */",
+                  "comment": "useLocation implementation."
+                },
+                "signature": "(property) useLocation?: UseLocation<{}>",
+                "name": "useLocation",
+                "type": {
+                  "__schema": "TypeRefSchema",
+                  "location": {
+                    "filePath": "navigation-provider.tsx",
+                    "line": 13,
+                    "character": 17
+                  },
+                  "name": "UseLocation"
+                },
+                "isOptional": true
+              },
+              {
+                "__schema": "VariableLikeSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 18,
+                  "character": 3
+                },
+                "doc": {
+                  "__schema": "DocSchema",
+                  "location": {
+                    "filePath": "navigation-provider.tsx",
+                    "line": 15,
+                    "character": 3
+                  },
+                  "raw": "/**\n   * navigate to another page\n   */",
+                  "comment": "navigate to another page"
+                },
+                "signature": "(property) useNavigate?: UseNavigate",
+                "name": "useNavigate",
+                "type": {
+                  "__schema": "TypeRefSchema",
+                  "location": {
+                    "filePath": "navigation-provider.tsx",
+                    "line": 18,
+                    "character": 3
+                  },
+                  "name": "UseNavigate"
+                },
+                "isOptional": true
+              }
+            ]
+          }
+        },
+        {
+          "__schema": "VariableLikeSchema",
+          "location": {
+            "filePath": "navigation-provider.tsx",
+            "line": 21,
+            "character": 14
+          },
+          "signature": "const NavigationContext: React.Context<RouterContextType>",
+          "name": "NavigationContext",
+          "type": {
+            "__schema": "InferenceTypeSchema",
+            "location": {
+              "filePath": "navigation-provider.tsx",
+              "line": 21,
+              "character": 14
+            },
+            "type": "React.Context<RouterContextType>"
+          },
+          "isOptional": false,
+          "defaultValue": "React.createContext<RouterContextType>({})"
+        },
+        {
+          "__schema": "FunctionLikeSchema",
+          "location": {
+            "filePath": "navigation-provider.tsx",
+            "line": 27,
+            "character": 1
+          },
+          "doc": {
+            "__schema": "DocSchema",
+            "location": {
+              "filePath": "navigation-provider.tsx",
+              "line": 23,
+              "character": 1
+            },
+            "raw": "/**\n * Gets routing components from context.\n * (defaults to native components)\n */",
+            "comment": "Gets routing components from context.\n(defaults to native components)"
+          },
+          "signature": "function useNavigation(): RouterContextType",
+          "name": "useNavigation",
+          "params": [],
+          "returnType": {
+            "__schema": "TypeRefSchema",
+            "location": {
+              "filePath": "navigation-provider.tsx",
+              "line": 27,
+              "character": 1
+            },
+            "name": "RouterContextType"
+          },
+          "modifiers": [
+            "export"
+          ]
+        },
+        {
+          "__schema": "ReactSchema",
+          "location": {
+            "filePath": "navigation-provider.tsx",
+            "line": 32,
+            "character": 1
+          },
+          "signature": "function NavigationProvider({ children, implementation, }: {\n    children: ReactNode;\n    implementation: RouterContextType;\n}): React.JSX.Element",
+          "name": "NavigationProvider",
+          "props": {
+            "__schema": "ParameterSchema",
+            "location": {
+              "filePath": "navigation-provider.tsx",
+              "line": 32,
+              "character": 36
+            },
+            "name": "{ children, implementation }",
+            "type": {
+              "__schema": "TypeLiteralSchema",
+              "location": {
+                "filePath": "navigation-provider.tsx",
+                "line": 35,
+                "character": 4
+              },
+              "members": [
+                {
+                  "__schema": "VariableLikeSchema",
+                  "location": {
+                    "filePath": "navigation-provider.tsx",
+                    "line": 36,
+                    "character": 3
+                  },
+                  "signature": "(property) children: React.ReactNode",
+                  "name": "children",
+                  "type": {
+                    "__schema": "TypeRefSchema",
+                    "location": {
+                      "filePath": "navigation-provider.tsx",
+                      "line": 36,
+                      "character": 13
+                    },
+                    "name": "ReactNode",
+                    "packageName": "react"
+                  },
+                  "isOptional": false
+                },
+                {
+                  "__schema": "VariableLikeSchema",
+                  "location": {
+                    "filePath": "navigation-provider.tsx",
+                    "line": 37,
+                    "character": 3
+                  },
+                  "signature": "(property) implementation: RouterContextType",
+                  "name": "implementation",
+                  "type": {
+                    "__schema": "TypeRefSchema",
+                    "location": {
+                      "filePath": "navigation-provider.tsx",
+                      "line": 37,
+                      "character": 3
+                    },
+                    "name": "RouterContextType"
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            "isOptional": false,
+            "objectBindingNodes": [
+              {
+                "__schema": "VariableLikeSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 36,
+                  "character": 3
+                },
+                "signature": "(property) children: React.ReactNode",
+                "name": "children",
+                "type": {
+                  "__schema": "TypeRefSchema",
+                  "location": {
+                    "filePath": "navigation-provider.tsx",
+                    "line": 36,
+                    "character": 13
+                  },
+                  "name": "ReactNode",
+                  "packageName": "react"
+                },
+                "isOptional": false
+              },
+              {
+                "__schema": "VariableLikeSchema",
+                "location": {
+                  "filePath": "navigation-provider.tsx",
+                  "line": 37,
+                  "character": 3
+                },
+                "signature": "(property) implementation: RouterContextType",
+                "name": "implementation",
+                "type": {
+                  "__schema": "TypeRefSchema",
+                  "location": {
+                    "filePath": "navigation-provider.tsx",
+                    "line": 37,
+                    "character": 3
+                  },
+                  "name": "RouterContextType"
+                },
+                "isOptional": false
+              }
+            ],
+            "isSpread": false
+          },
+          "returnType": {
+            "__schema": "TypeRefSchema",
+            "location": {
+              "filePath": "navigation-provider.tsx",
+              "line": 32,
+              "character": 1
+            },
+            "name": "React.JSX.Element",
+            "packageName": "react"
+          },
+          "modifiers": [
+            "export"
+          ]
+        }
+      ],
+      "internals": []
+    }
+  ],
+  "componentId": {
+    "scope": "teambit.base-react",
+    "name": "navigation/link",
+    "version": "c7ed551216d42f4bbb8e8efaaff08c1c7ffa29a5"
+  },
+  "taggedModuleExports": []
+}

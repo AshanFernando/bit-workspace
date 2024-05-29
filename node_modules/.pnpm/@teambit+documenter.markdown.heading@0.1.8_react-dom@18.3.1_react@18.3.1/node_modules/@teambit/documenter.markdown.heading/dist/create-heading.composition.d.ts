@@ -1,0 +1,9 @@
+/// <reference types="react" />
+export declare const CreateH1Example: () => JSX.Element;
+export declare const CreateH2Example: () => JSX.Element;
+export declare const CreateH3Example: () => JSX.Element;
+export declare const CreateH4Example: () => JSX.Element;
+export declare const CreateH5Example: () => JSX.Element;
+export declare const CreateH6Example: () => JSX.Element;
+export declare const LinkedH1Example: () => JSX.Element;
+export declare const LinkedH5Example: () => JSX.Element;

@@ -1,0 +1,13 @@
+import { ComponentContext } from "@teambit/generator";
+
+
+export function themeIndexFile(context: ComponentContext) {
+  return {
+    relativePath: `index.ts`,
+    content: `export { ${context.namePascalCase} } from "./${context.name}.js";
+export { useTheme } from "./${context.name}-provider.js";
+export type { ${context.namePascalCase}Props } from "./${context.name}.js";
+export type { ${context.namePascalCase}Schema } from "./${context.name}-tokens.js";
+`
+  }
+}

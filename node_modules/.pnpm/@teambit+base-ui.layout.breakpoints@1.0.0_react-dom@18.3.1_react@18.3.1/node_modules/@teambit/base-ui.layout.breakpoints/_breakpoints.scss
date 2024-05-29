@@ -1,0 +1,31 @@
+/**
+* Preset breakpoints for the whole app.  
+* 
+* Use `(min-width: xxx)` to keep a consistent mobile-first experience (and not `max-width`).
+*
+* ```scss
+* $br-xs: 360px;
+* $br-sm: 480px;		//mobile
+* $br-md: 768px;		
+* $br-l: 920px;		//tablet
+* $br-lg-new: 1200px;	//laptop
+* $br-xl: 1440px;
+* $br-xxl: 1920px;
+* ```
+* 
+* ## example
+* ```scss
+* .content @media screen and (min-width: $br-l) {
+*   display: flex;
+* } 
+* ```
+*/
+
+$br-xs: 360px;
+$br-sm: 480px; //mobile
+$br-md: 768px;
+$br-l: 920px; //tablet
+// $br-lg: 1080px; //(this is being phased out)
+$br-lg: 1200px;
+$br-xl: 1440px;
+$br-xxl: 1920px;

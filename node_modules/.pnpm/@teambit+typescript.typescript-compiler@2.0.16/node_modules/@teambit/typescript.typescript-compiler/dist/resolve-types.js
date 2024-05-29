@@ -1,0 +1,25 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.resolveTypes = void 0;
+const path_1 = require("path");
+const globby_1 = __importDefault(require("globby"));
+const D_TS_PATTERN = '**/*.d.ts';
+function getTypesFilesFromDir(dir) {
+    const files = globby_1.default.sync([D_TS_PATTERN], {
+        cwd: dir,
+        onlyFiles: true,
+    });
+    return files.map((file) => (0, path_1.join)(dir, file));
+}
+function resolveTypes(rootDir, typesDirs) {
+    const resolved = typesDirs.flatMap((typesDir) => {
+        const dir = (0, path_1.join)(rootDir, typesDir);
+        return getTypesFilesFromDir(dir);
+    });
+    return resolved;
+}
+exports.resolveTypes = resolveTypes;
+//# sourceMappingURL=resolve-types.js.map

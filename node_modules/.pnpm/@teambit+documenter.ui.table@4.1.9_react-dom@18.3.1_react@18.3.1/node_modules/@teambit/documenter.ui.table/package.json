@@ -1,0 +1,27 @@
+{
+  "name": "@teambit/documenter.ui.table",
+  "version": "4.1.9",
+  "homepage": "https://bit.cloud/teambit/documenter/ui/table",
+  "main": "dist/index.js",
+  "componentId": {
+    "scope": "teambit.documenter",
+    "name": "ui/table",
+    "version": "4.1.9"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "@teambit/documenter.ui.table-heading-row": "4.0.11",
+    "@teambit/documenter.ui.table-row": "4.1.13"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/jest": "^29.2.2",
+    "@teambit/documenter.envs.documenter-react-env": "0.0.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "private": false
+}

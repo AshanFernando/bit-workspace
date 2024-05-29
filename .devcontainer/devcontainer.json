@@ -9,11 +9,8 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "bit.vscode-bit@latest"
-      ],
-      "settings": {
-        "git.enabled": false
-      }
+        "bit.vscode-bit"
+      ]
     }
   }
 }

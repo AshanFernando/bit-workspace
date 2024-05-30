@@ -1,1 +1,0 @@
-{"version":3,"file":"error.composition.js","sourceRoot":"","sources":["../error.composition.tsx"],"names":[],"mappings":";;;;;;AAAA,kDAA0B;AAC1B,wFAA8D;AAC9D,mCAAgC;AAEzB,MAAM,YAAY,GAAG,GAAG,EAAE,CAAC,CACjC,8BAAC,oCAAK;IACL,uCAAK,KAAK,EAAE,EAAE,OAAO,EAAE,MAAM,EAAE,UAAU,EAAE,QAAQ,EAAE,cAAc,EAAE,QAAQ,EAAE;QAC9E,8BAAC,aAAK,yBAAuB,CACxB,CACC,CACR,CAAC;AANW,QAAA,YAAY,gBAMvB"}

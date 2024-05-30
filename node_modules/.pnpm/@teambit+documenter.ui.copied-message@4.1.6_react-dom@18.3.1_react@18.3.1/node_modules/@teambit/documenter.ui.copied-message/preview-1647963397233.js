@@ -1,2 +1,0 @@
-export const compositions = [require('/Users/yoshuakuttler/Library/Caches/Bit/capsules/ba712acadaad37b4be01cac6ced160edbc352fee/teambit.documenter_ui_copied-message@4.1.6/dist/copied-message.composition.js')]
-export const overview = [require('/Users/yoshuakuttler/Library/Caches/Bit/capsules/ba712acadaad37b4be01cac6ced160edbc352fee/teambit.documenter_ui_copied-message@4.1.6/dist/copied-message.docs.mdx')]

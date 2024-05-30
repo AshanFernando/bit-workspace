@@ -1,1 +1,0 @@
-{"version":3,"file":"section.docs.js","sourceRoot":"","sources":["../section.docs.tsx"],"names":[],"mappings":";;;AAAA,sGAAgF;AAChF,uCAAmC;AAEtB,QAAA,MAAM,GAAG,CAAC,OAAO,EAAE,cAAc,EAAE,WAAW,CAAC,CAAC;AAEhD,QAAA,QAAQ,GAAG;IACpB;QACA,KAAK,EAAE;YACH,OAAO,EAAP,iBAAO;YACP,iBAAiB,EAAjB,uDAAiB;SACpB;QACD,KAAK,EAAE,8BAA8B;QACrC,IAAI,EAAE;;;;;;CAMT;KAAC;CACD,CAAA"}

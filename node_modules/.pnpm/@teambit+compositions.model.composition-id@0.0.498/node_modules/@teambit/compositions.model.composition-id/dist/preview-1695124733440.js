@@ -1,7 +1,0 @@
-;
-import * as overview_0 from '/home/circleci/Library/Caches/Bit/capsules/8891be5ad3d35bfc38b9cd90c0e05b598a5a55af/teambit.compositions_model_composition-id@0.0.498/dist/humanize.docs.md';
-
-export const compositions = [];
-export const overview = [overview_0];
-
-export const compositions_metadata = {"compositions":[]};

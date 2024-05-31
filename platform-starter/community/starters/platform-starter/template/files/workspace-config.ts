@@ -8,7 +8,7 @@ export async function workspaceConfig({ name, defaultScope }: WorkspaceContext) 
   configParsed['teambit.generator/generator'] = {
     envs: [
       'teambit.react/react-env',
-      'teambit.node/node',
+      'teambit.node/node'
     ],
   };
   configParsed['teambit.workspace/variants'] = {

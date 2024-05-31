@@ -3,7 +3,7 @@ import { workspaceConfig } from './template/files/workspace-config';
 import { gitIgnore } from './template/files/git-ignore';
 
 export const PlatformStarterWorkspaceStarter: Starter = {
-  name: 'platform-starter-workspace',
+  name: 'platform-starter',
   description: 'platform-starter workspace with kubernetes deployer',
   generateFiles: async (context: WorkspaceContext) => {
     const files = [

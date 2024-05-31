@@ -12,18 +12,22 @@
     "starters/platform-starter": {
         "name": "starters/platform-starter",
         "scope": "",
-        "version": "430e8add57ac999b7fa26b5241ccf5536cd16738",
-        "defaultScope": "teambit.commmunity",
+        "version": "",
+        "defaultScope": "teambit.community",
         "mainFile": "index.ts",
-        "rootDir": "commmunity/starters/platform-starter",
-        "onLanesOnly": true,
-        "isAvailableOnCurrentLane": true
+        "rootDir": "community/starters/platform-starter",
+        "config": {
+            "teambit.harmony/aspect": {},
+            "teambit.envs/envs": {
+                "env": "teambit.harmony/aspect"
+            }
+        }
     },
     "$schema-version": "17.0.0",
     "_bit_lane": {
         "id": {
             "name": "starter",
-            "scope": "teambit.commmunity"
+            "scope": "teambit.community"
         },
         "exported": false
     }

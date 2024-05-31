@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "teambit.commmunity",
+    "defaultScope": "teambit.community",
     "resolveAspectsFromNodeModules": true,
     "resolveEnvsFromRoots": true
   },

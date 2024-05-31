@@ -133,7 +133,7 @@ importers:
         specifier: 5.9.5
         version: 5.9.5
 
-  commmunity/starters/platform-starter:
+  community/starters/platform-starter:
     dependencies:
       '@babel/runtime':
         specifier: 7.20.0
@@ -166,9 +166,9 @@ importers:
 
   node_modules/.bit_roots/teambit.harmony_aspect:
     dependencies:
-      '@teambit/commmunity.starters.platform-starter':
+      '@teambit/community.starters.platform-starter':
         specifier: workspace:*
-        version: file:commmunity/starters/platform-starter(react-dom@17.0.2)(react@17.0.2)
+        version: file:community/starters/platform-starter(react-dom@17.0.2)(react@17.0.2)
       react:
         specifier: ^16.8.0 || ^17.0.0
         version: 17.0.2
@@ -176,7 +176,7 @@ importers:
         specifier: ^16.8.0 || ^17.0.0
         version: 17.0.2(react@17.0.2)
     dependenciesMeta:
-      '@teambit/commmunity.starters.platform-starter':
+      '@teambit/community.starters.platform-starter':
         injected: true
 
 packages:
@@ -23630,10 +23630,10 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
 
-  file:commmunity/starters/platform-starter(react-dom@17.0.2)(react@17.0.2):
-    resolution: {directory: commmunity/starters/platform-starter, type: directory}
-    id: file:commmunity/starters/platform-starter
-    name: '@teambit/commmunity.starters.platform-starter'
+  file:community/starters/platform-starter(react-dom@17.0.2)(react@17.0.2):
+    resolution: {directory: community/starters/platform-starter, type: directory}
+    id: file:community/starters/platform-starter
+    name: '@teambit/community.starters.platform-starter'
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
       react-dom: ^16.8.0 || ^17.0.0

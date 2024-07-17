@@ -1,6 +1,6 @@
 {
   "name": "Bit Stable",
-  "image": "bitsrc/stable:latest",
+  "image": "bitsrc/stable:latest-alpine",
   "forwardPorts": [],
   "remoteUser": "bituser",
   "remoteEnv": {
